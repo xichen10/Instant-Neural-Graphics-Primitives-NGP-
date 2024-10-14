@@ -3,8 +3,11 @@
 第一步，环境搭建
   安装gcc，服务器默认已安装，通过gcc --version查看版本号
   安装CUDA，服务器默认已安装，通过nvcc --version查看版本号
-  安装anaconda（官网下载，wget https://repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh，安装，bash Anaconda3-2023.03-Linux-x86_64.sh）
   安装python3（推荐python3.8），服务器默认已安装，通过python3 --version查看版本号
+  安装anaconda（官网下载，wget https://repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh，安装，bash Anaconda3-2023.03-Linux-x86_64.sh）
+  创建虚拟环境（conda create -n xxx python=xxx)
+
+  安装各种库
   pytorch（这里pytorch版本和CUDA版本要匹配）
   pytorch_lightning
     需指定版本号pip install pytorch-lightning==1.9.0，否则会报ImportError: cannot import name 'EPOCH_OUTPUT' from 'pytorch_lightning.utilities.types'，因为新版的pytorch-lightning移除了EPOCH_OUTPUT。这里旧版本安装巨快（1M左右），新版本巨慢（800M左右）。

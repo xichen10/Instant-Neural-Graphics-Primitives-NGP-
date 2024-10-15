@@ -24,3 +24,5 @@
   安装vren库（这里要cd models/csrc/, 运行python setup.py install）
   torch_scatter（https://zhuanlan.zhihu.com/p/504134665）
   apex
+
+第二步，数据集下载（https://github.com/facebookresearch/NSVF?tab=readme-ov-file#dataset）

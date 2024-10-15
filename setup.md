@@ -11,7 +11,7 @@
   pytorch（这里pytorch版本和CUDA版本要匹配）
   pytorch_lightning
     需指定版本号pip install pytorch-lightning==1.9.0，否则会报ImportError: cannot import name 'EPOCH_OUTPUT' from 'pytorch_lightning.utilities.types'，因为新版的pytorch-lightning移除了EPOCH_OUTPUT。这里旧版本安装巨快（1M左右），新版本巨慢（800M左右）。
-  tinycudann
+  tinycudann（这个有点麻烦，参考https://blog.csdn.net/qq_45934285/article/details/140332600）
     安装tinycudann前先安装pytorch3d库，直接pip install pytorch3d
     下载tiny-cuda-nn-master.zip，解压。
     命令行cd tiny-cuda-nn-master/bindings/torch/

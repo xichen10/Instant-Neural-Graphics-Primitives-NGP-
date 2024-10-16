@@ -26,3 +26,7 @@
   apex（cd apex, python setup.py install --cpp_ext --cuda_ext）
 
 第二步，数据集下载（https://github.com/facebookresearch/NSVF?tab=readme-ov-file#dataset）
+
+第三步，开始训练
+  python train.py --root_dir 指定数据集路径
+  训练结果会保存到result/，模型会保存到ckpts/
